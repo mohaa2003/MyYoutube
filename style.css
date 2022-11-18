@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 15px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left img{
+    width: 50%;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
+.center form{
+    display: flex;
+    height: 36px;
+    width: 628px;
+}
+
+.center form input{
+    width: 100%;
+    border-radius: 8px 0 0 8px ;
+    padding: 10px;
+    font-size: 1.7rem;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+}
+
+.center form button{
+    width: 60px;
+    border-radius: 0 8px 8px 0;
+    border:1px solid #d3d3d3; 
+   padding-top: 3px;
+   cursor: pointer;
+}
+
+.center form button:hover{
+    background-color: #e9e8e8;
+}
+
+.center>i{
+    width: 40px;
+    background: #f8f8f8;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.right a i{
+    color: black;
+    margin-right: 15px;
+    font-size: 3rem;
+}
+
+.content{
+    height: calc(100% - 56px);
+    display: flex;
+    background: #f9f9f9;
+}
+
+aside{
+    height: 100vh;
+    width: 280px;
+    background: #fff;
+    overflow: hidden;
+    position: sticky;
+    top:0;
+}
+
+aside:hover{
+    overflow: auto;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding-right: 15px ; 
+    padding-left: 15px ; 
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+
+.nav-link:hover{
+    background-color: rgb(250, 247, 247);
+}
+
+.nav-link span{
+    margin-left: 25px;
+    font-size: 1.5rem;
+}
+
+nav h1{
+    font-size: 2rem;
+    margin:15px 13px;
+    font-weight: lighter;
+}
+
+.active{
+    background-color: #eee;
+    border-radius: 15px;
+}
+
+.main-content{
+    width: calc(100% - 280px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post{
+    margin: 20px auto;
+    width: 30%;
+    height: 300px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+    }
+
+    .post:hover{
+        transition: 0.5s all 2s ease;
+        transform: scale(1.1);
+        z-index: 0;
+    }
+
+
+    .cover{
+        width: 100%;
+        height: 180px;
+        position: relative;
+    }
+
+    .cover img{
+        width:100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .cover p{
+        color: #fff;
+        background-color: #000;
+        font-size: 1.3rem;
+        padding: 3px;
+        border-radius: 5px;
+        font-weight: 600;
+        position: absolute;
+        bottom: 3px;
+        right: 4px;
+    }
+
+    .subpost{
+        position: relative;
+    }
+
+    .subpost .pdp{
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        position: absolute;
+        left: -2px;
+        top: 15px;
+    }
+
+    .subpost .title{
+        margin: 22px 50px 5px;
+        display: inline-block;
+        font-weight: 500;
+    }
+
+    .subpost .info ,.subpost .vues {
+        margin: 5px 50px;
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 0.822);
+    }
+
+    .more{
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        visibility: hidden;
+    }
+
+    .post:hover .more{
+        visibility: visible;
+    }
+
+    .post:hover .more:active{
+        background-color: #e9e8e8;
+        border-radius: 100px;
+    }
